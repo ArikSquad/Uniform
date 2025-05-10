@@ -27,6 +27,9 @@ include(
         // Proxy Plugins
         'velocity',
 
+        // Server Software
+        'minestom',
+
         // Example plugin
         'example-plugin'
 )

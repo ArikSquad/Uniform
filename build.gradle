@@ -223,6 +223,19 @@ subprojects {
             }
         }
 
+        if (['minestom'].contains(project.name)) {
+            publications {
+                mavenMinestom(MavenPublication) {
+                    groupId = 'net.william278.uniform'
+                    artifactId = 'uniform-minestom'
+                    version = "$rootProject.version"
+                    artifact shadowJar
+                    artifact sourcesJar
+                    artifact javadocJar
+                }
+            }
+        }
+
     }
 
     jar.dependsOn shadowJar
